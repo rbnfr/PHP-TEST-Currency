@@ -20,10 +20,8 @@
             <option value="YEN">YEN</option>
             <option value="GBP">GBP</option>
         </select><br>
-<!--        <input type="text" name="input[]" id="currency" value="" placeholder="EUR, USD, YEN, GBP"><br>-->
         Amount:
         <input type="text" name="input[]" id="amount" value="100"><br>
-
         <input type="submit" value="Do"><br><br>
     </form>
 
