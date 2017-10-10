@@ -1,0 +1,17 @@
+body {
+    padding: 5px;
+}
+
+h1 {
+    color: chocolate;
+    outline: auto;
+    padding: 5px;
+}
+
+h1:hover {
+    background-color: khaki;
+}
+
+input:hover {
+    background-color: powderblue;
+}

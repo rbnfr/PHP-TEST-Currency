@@ -4,6 +4,7 @@
 /config/app.php
 /tmp/*
 /logs/*
+/.idea/*
 
 # CakePHP 2
 
