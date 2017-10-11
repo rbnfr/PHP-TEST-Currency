@@ -6,10 +6,30 @@
  * Time: 8:38
  */
 
-// Call to the model
-require_once("../model/CurrencyConverter.php");
-$money = new CurrencyConverter();
-//$money->get(100);
+require_once ("../model/CurrencyConverter.php");
+class currencyController {
+   // Call to the model
+    public $currencyConverter1;
 
-return $money;
+    function printable(){
+        echo "I'm a printed text";
+    }
+
+    /**
+     *
+     */
+    function conversion(){
+        try {
+            $currencyConverter1 = new CurrencyConverter;
+            $currencyConverter1->print_results();
+        } catch (mysqli_sql_exception $ex){
+
+        }
+    }
+
+
+        //$money->get(100);
+
+
+}
 

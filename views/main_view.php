@@ -17,7 +17,7 @@
             <option value="Select" disabled>Select</option>
             <option value="EUR" selected>EUR</option>
             <option value="USD">USD</option>
-            <option value="YEN">YEN</option>
+            <option value="JPY">YEN</option>
             <option value="GBP">GBP</option>
         </select><br>
         Amount:
@@ -28,8 +28,14 @@
 
 <?php
 require '../model/CurrencyConverter.php';
+require '../controllers/currencyController.php';
+require '../model/Debug.php';
+
+
 $currencyConverter1 = new CurrencyConverter;
 $currencyConverter1->print_results();
+$currencyConverter1->console("")
+
 ?>
 </fieldset>
 

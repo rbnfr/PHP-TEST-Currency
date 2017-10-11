@@ -5,24 +5,23 @@
  * Date: 06/10/2017
  * Time: 14:33
  */
-
-class CurrencyConverter {
+require '../model/Debug.php';
+class CurrencyConverter extends Debug{
 
     private $baseValue = 0;
 
+    // Updated on 11/10/2017
     private $rates = [
         'GBP' => 1.0,
-        'USD' => 0.6,
-        'EUR' => 0.83,
-        'YEN' => 0.0058
+        'USD' => 0.757780,
+        'EUR' => 0.895933,
+        'JPY' => 0.006744
     ];
-
-
 
     public function get($currency) {
         if (isset($this->rates[$currency])) {
             $rate = 1/$this->rates[$currency];
-            return round($this->baseValue * $rate, 2);
+            return round($this->baseValue * $rate, 3);
         }
         else return 0;
     }
