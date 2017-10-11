@@ -34,7 +34,8 @@ require '../model/Debug.php';
 
 $currencyConverter1 = new CurrencyConverter;
 $currencyConverter1->print_results();
-$currencyConverter1->console("")
+$debugger = new Debug;
+$debugger->console('Done');
 
 ?>
 </fieldset>

@@ -8,6 +8,6 @@
 
 class Debug{
     function console($data) {
-        echo("<script>console.log('PHP: ".$data."');</script>");
+        echo("<script>console.log('".$data."');</script>");
     }
 }

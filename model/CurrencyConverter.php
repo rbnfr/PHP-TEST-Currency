@@ -5,8 +5,8 @@
  * Date: 06/10/2017
  * Time: 14:33
  */
-require '../model/Debug.php';
-class CurrencyConverter extends Debug{
+
+class CurrencyConverter {
 
     private $baseValue = 0;
 
